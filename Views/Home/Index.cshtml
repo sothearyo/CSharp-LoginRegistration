@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Login and Registration";
+}
+@* <style>
+    * {
+        border-color: red;
+        border-width: 0.125px;
+        border-style: solid;
+    } *@
+@* </style> *@
+<div class="container py-5">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-4 border m-1 rounded">
+            <h2 class="py-3">Register</h2>
+            <partial name="RegPartial" />
+        </div>
+        <div class="col-4 border m-1 rounded">
+            <h2 class="py-3">Login</h2>
+            <partial name="LogPartial" />
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>

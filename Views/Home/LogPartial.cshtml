@@ -1,0 +1,37 @@
+<style>
+    span {
+        color: red;
+        font-size: small;
+    }
+</style>
+
+
+@model LoginUser
+<form action="login" method="post">
+    <div class="form-group row">
+        <div class="col-5">
+            <label asp-for="UserEmail"></label>
+        </div>
+        <div class="col-7">
+            <span asp-validation-for="UserEmail"></span>
+            <input asp-for="UserEmail" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-5">
+            <label asp-for="UserPassword"></label>
+        </div>
+        <div class="col-7">
+            <span asp-validation-for="UserPassword"></span>
+            <input asp-for="UserPassword" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row pt-3">
+        <div class="col">
+            <input type="submit" value="Login" class="btn btn-outline-info">
+        </div>
+    </div>
+
+
+
+</form>
